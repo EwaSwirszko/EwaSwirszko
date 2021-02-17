@@ -1,0 +1,15 @@
+import random
+r = random.randint(272, 1459)
+
+number = int(input("Find the number drawn by the computer. The number is between 272 and 1459.\n"))
+
+while True:
+    if number > r:
+        print("Too high.")
+        number = int(input("Try again:\n"))
+    elif number < r:
+        print("Too low.")
+        number = int(input("Try again:\n"))
+    elif number == r:
+        end = input("Congratulations! You guessed it. Press enter to finish.")
+        break
