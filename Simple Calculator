@@ -1,0 +1,16 @@
+num1 = float(input("Enter the first number: "))
+action = input("division (d)\nmultiplication (m)\naddition (a)\nsubtraction (s):\n")
+num2 = float(input("Enter the second number: "))
+
+if action == "d":
+    print(num1/num2)
+elif action == "m":
+    print(num1*num2)
+elif action == "a":
+    print(num1+num2)
+elif action == "s":
+    print(num1-num2)
+else:
+    print("There is no such action.")
+
+end = input("Press enter to finish.")
