@@ -1,0 +1,42 @@
+name1 = input("What is player 1's name: ")
+name2 = input("What is player 2's name: ")
+
+win1 = []
+win2 = []
+
+print("\nChoose:\npaper (p)\nstone (s)\nscissors (c)\n")
+
+for i in range(3):
+    gamer1 = input("{}: " .format(name1))
+    gamer2 = input("{}: " .format(name2))
+
+    while gamer1 == "p" and gamer2 == "p" or gamer1 == "s" and gamer2 == "s" or gamer1 == "c" and gamer2 == "c":
+        print("Draw\n")
+        break
+
+    while gamer1 == "p" and gamer2 == "s" or gamer1 == "s" and gamer2 == "c" or gamer1 == "c" and gamer2 == "p":
+        print("{} wins.\n" .format(name1))
+        win1.append("1")
+        break
+
+    while gamer1 == "p" and gamer2 == "c" or gamer1 == "s" and gamer2 == "p" or gamer1 == "c" and gamer2 == "s":
+        print("{} wins.\n" .format(name2))
+        win2.append("1")
+        break
+
+s1 = len(win2)
+s2 = len(win2)
+
+print("\nPoints {}: " .format(name1))
+print(s1)
+print("Points {}: " .format(name2))
+print(s2)
+
+if s1 == s2):
+    print("\nDraw")
+elif s1 > s2:
+    print("\n{} wins." .format(name1))
+elif s2 > s1:
+    print("\n{} wins." .format(name2))
+    
+end = input("Press enter to finish.")
